@@ -103,7 +103,7 @@ public class SplashActivity extends  AppCompatActivity  {
 
 						SharedPreferences sh = getSharedPreferences("MySharedPref", MODE_PRIVATE);
 
-						toAuth.setClass(getApplicationContext(), MainActivity.class);
+						toAuth.setClass(getApplicationContext(), AuthActivity.class);
 						_ActivityTranlation(imageview1, "icon", toAuth);
 						finish();
 
@@ -128,7 +128,7 @@ public class SplashActivity extends  AppCompatActivity  {
 				});
 			}
 		};
-		_timer.schedule(timer, (int)(8000));
+		_timer.schedule(timer, (int)(3000));
 	}
 	
 	@Override
